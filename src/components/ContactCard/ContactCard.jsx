@@ -22,7 +22,13 @@ const ContactCard = ({ item, getOneContact, deleteContact }) => {
           }}
         >
           <Card.Text>
-            {item.phone} <br />
+            <b>Name: </b>
+            {item.name}
+            <br />
+            <b>Surname: </b>
+            {item.surname}
+            <br />
+            <b>Number:</b> {item.phone}
           </Card.Text>
           <Button
             variant="danger"
